@@ -1,1 +1,1 @@
-# The default keymap for budget96
+# Custom Keymap & Stuff for budget96
