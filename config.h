@@ -24,12 +24,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MANUFACTURER    DonutCables
 #define PRODUCT         budget96
 
+#ifdef RGBLED_NUM
+#undef RGBLED_NUM
+#endif
+
 #define RGBLED_NUM 18
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
 #define RGBLIGHT_SLEEP
-#define RGBLIGHT_EFFECT_KNIGHT_OFFSET 8
+#define RGBLIGHT_EFFECT_KNIGHT_OFFSET 5
 
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 15
