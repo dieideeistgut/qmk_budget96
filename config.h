@@ -17,13 +17,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#include "config_common.h"
-
-#define VENDOR_ID       0x20A0
-#define PRODUCT_ID      0x422D
-#define MANUFACTURER    DonutCables
-#define PRODUCT         budget96
-
 #ifdef RGBLED_NUM
 #undef RGBLED_NUM
 #endif
@@ -33,6 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
 #define RGBLIGHT_SLEEP
+#define RGB_STEP 16
 #define RGBLIGHT_EFFECT_KNIGHT_OFFSET 5
 
 #define MATRIX_ROWS 8
@@ -45,7 +39,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DIODE_DIRECTION COL2ROW
 #define DEBOUNCE 5
 
-#define BACKLIGHT_LEVELS 1
-#define RGBLIGHT_ANIMATIONS
 
 #define TAPPING_TERM 200
